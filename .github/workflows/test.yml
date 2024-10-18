@@ -29,7 +29,7 @@ jobs:
       - name: Build binary
         run: |
           nimble install -y
-          nimble build -d:release
+          nimble build -d:release -d:staticBuild
           ls bin/*
       - name: Testing binaries
         run: |
